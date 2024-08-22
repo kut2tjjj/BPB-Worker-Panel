@@ -220,7 +220,7 @@ export default {
                     default:
                          return new Response('Not found', { status: 404 });
                         // www.speedtest.net
-                        url.hostname = '';
+                        url.hostname = '47.242.202.230';
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
