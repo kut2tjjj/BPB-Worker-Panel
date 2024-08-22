@@ -220,7 +220,7 @@ export default {
                     default:
                          return new Response('Not found', { status: 404 });
                         // www.speedtest.net
-                        url.hostname = '8.219.114.201';
+                        url.hostname = 'www.visa.com.sg';
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
