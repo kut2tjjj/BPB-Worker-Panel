@@ -2170,8 +2170,8 @@ const renderHomePage = async (env, hostName, fragConfigs) => {
 					<label for="localDNS">🏚️ Local DNS</label>
 					<input type="text" id="localDNS" name="localDNS" value="${localDNS}"
 						
-                                                pattern="^((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|localhost|((?:[a-fA-F0-9]{1,4}:){6}(?:[a-fA-F0-9]{1,4}|:)|::(?:[a-fA-F0-9]{1,4}:){5}(?:[a-fA-F0-9]{1,4}|:)|(?:[a-fA-F0-9]{1,4})?::(?:[a-fA-F0-9]{1,4}:){4}(?:[a-fA-F0-9]{1,4}|:)|(?:[a-fA-F0-9]{1,4}:){0,1}(?:[a-fA-F0-9]{1,4})?::(?:[a-fA-F0-9]{1,4}:){3}(?:[a-fA-F0-9]{1,4}|:)|(?:[a-fA-F0-9]{1,4}:){0,2}(?:[a-fA-F0-9]{1,4})?::(?:[a-fA-F0-9]{1,4}:){2}(?:[a-fA-F0-9]{1,4}|:)|(?:[a-fA-F0-9]{1,4}:){0,3}(?:[a-fA-F0-9]{1,4})?::(?:[a-fA-F0-9]{1,4}:)(?:[a-fA-F0-9]{1,4}|:)|(?:[a-fA-F0-9]{1,4}:){0,4}(?:[a-fA-F0-9]{1,4})?::(?:[a-fA-F0-9]{1,4})|(?:[a-fA-F0-9]{1,4}:){0,5}(?:[a-fA-F0-9]{1,4})?::))$"
-                                                title="Please enter a valid DNS IP Address (IPv4, full IPv6, or compressed IPv6) or localhost!" required>
+                                                pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|localhost$"
+                                                title="Please enter a valid DNS IP Address or localhost!"  required>
 				</div>	
 				<div class="form-control">
 					<label for="fragmentLengthMin">📐 Length</label>
